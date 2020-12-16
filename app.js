@@ -20,6 +20,6 @@ function changeWeather() {
 
 function drawWeather() {
     weather.weatherData().then(cityWeather => {
-    ui.print(cityWeather);
+        ui.print(cityWeather);
     }).catch(error => console.log(error));
 }
