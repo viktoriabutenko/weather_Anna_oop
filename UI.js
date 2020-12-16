@@ -9,8 +9,8 @@ class UI {
     print(cityWeather) {
         this.cityName.textContent = cityWeather.name;
         const celcius = Math.round(parseFloat(cityWeather.main.temp)-273.15);
-        this.temp.innerHTML = `${celcius} &deg;C`;
+        this.temp.innerHTML = "Temperature: " + `${celcius} &deg;C`;
         this.desc.textContent = cityWeather.weather[0].description;
-        this.humidity.innerHTML = cityWeather.main.humidity + "%";
+        this.humidity.innerHTML = "Humidity: " + cityWeather.main.humidity + "%";
     }
 }
